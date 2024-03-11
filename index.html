@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Hello Vue</title>
+  </head>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <body>
+    <div id="app">
+      <!-- Message inside an h1 element -->
+      <h1 :style="{ color: textColor }">{{ message }}</h1>
+
+      <!-- Image taken from data -->
+      <img :src="imagePath + img" alt="" />
+
+      <!-- Button to change the photo -->
+      <button @click="changeImage">Change Photo</button>
+
+      <!-- Button to change the text color -->
+      <button @click="changeColor">Change Text Color</button>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
